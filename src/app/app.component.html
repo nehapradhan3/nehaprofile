@@ -1,19 +1,21 @@
 <!-- nav bar -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
 rel="stylesheet" />
-<div class="container">
+<div class="container" style="padding-top:50px;">
     <div class="row">
+      <!-- <div class="hidden"> -->
       <app-notes>type in ur memo</app-notes>
+    </div>
         <div class="col-md-2"> <a href="mail-compose.html" class="btn btn-danger btn-block btn-compose-email">Write a note</a>
 
             <ul
-            class="nav nav-pills flex-column nav-email shadow mb-20">
-                <li class="active nav-item"> <a href="#mail-inbox.html" class="nav-link">
+            class="nav nav-pills flex-column nav-email shadow mb-20" style="padding-top:20px;">
+                <!-- <li class="active nav-item"> <a href="#mail-inbox.html" class="nav-link">
 
-                    <i class="fa fa-inbox"></i> Inbox  <span class="label float-right">7</span>
+                    <i class="fa fa-inbox" ></i> Inbox  <span class="label float-right">7</span>
 
                 </a>
-                </li>
+                </li> -->
                 <li class="nav-item"> <a href="#mail-compose.html" class="nav-link"><i class="fa fa-envelope-o"></i> Send Mail</a>
                 </li>
                 <li class="nav-item"> <a href="#" class="nav-link"><i class="fa fa-certificate"></i> Important</a>
@@ -50,6 +52,7 @@ rel="stylesheet" />
                     </li>
                 </ul>
                 <!-- /.nav -->
+                <app-todos></app-todos>
 
         </div>
         <div class="col-md-10">
@@ -92,20 +95,34 @@ rel="stylesheet" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-8">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Neha Pradhan</li>
-                                    <li class="list-group-item">Software Engineer(Trainee)</li>
-                                    <li class="list-group-item">Fusemachines.Nepal</li>
-                                    <li class="list-group-item"><i class="fa fa-phone"></i> 908397384732</li>
-                                    <li class="list-group-item"><i class="fa fa-envelope"></i> neha.pradhan@fusemachines.com</li>
-                                </ul>
-                            </div>
-                        </div>
 
-                    </div>
+<!--collapse menu button-->
+<button data-toggle="collapse" data-target="#demo" type="button" class="btn btn-primary">View Details</button>
 
-                </div>
+<div id="demo" class="collapse">
+  <div class="col-xs-12 col-md-8">
+      <ul class="list-group" style="padding-top:20px;">
+          <li class="list-group-item">Neha Pradhan</li>
+          <li class="list-group-item">Software Engineer(Trainee)</li>
+          <li class="list-group-item">Fusemachines.Nepal</li>
+          <li class="list-group-item"><i class="fa fa-phone"></i> 908397384732</li>
+          <li class="list-group-item"><i class="fa fa-envelope"></i> neha.pradhan@fusemachines.com</li>
+      </ul>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+<!--end-->
+
+
+
 
                 <div class="bs-callout bs-callout-danger">
                      <h4>Summary</h4>

@@ -19,8 +19,8 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../arc/app/notes/notes.component.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.css"
+
 
       ],
       "scripts": ["../node_modules/jquery/dist/jquery.js",

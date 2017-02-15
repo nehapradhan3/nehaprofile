@@ -1,0 +1,34 @@
+<div class="todos">
+
+  <div>
+     <form (submit)="addTodo($event)"role="form">
+         <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="form-control" placeholder="Your Task"name="newTodo">
+         <button  type="submit" class="btn btn btn-primary"[disabled]="newTodo===''">Add Todo</button>
+    </form>
+  </div>
+
+  <!-- <input name="packersOff" class="strikethrough" value="1" type="checkbox">
+      <label for="packersOff" class="strikeThis">sssssssss</label> -->
+
+     <div [hidden]="newTodo">
+     <h4><p class="text-success">Type in a new todo...</p></h4>
+     </div>
+
+    <div [hidden]="!newTodo">
+     <h4> <p class="text-danger"> Typing: {{ newTodo }}</p></h4>
+    </div>
+
+    <ul>
+        <li *ngFor="let todo of todos; let i=index">
+
+        <input name="packersOff" type="checkbox" class="strikethrough" value="1" type="checkbox" [(ngModel)]="todo.completed" />
+        <span class="strikeThis" [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
+        <p class="text-warning">  {{todo.text}}
+        <span (click)="deleteTodo(i)" class="delete-icon"><button type="button" class="btn btn-success">x</button></span>
+        </p>
+        </li>
+    </ul>
+
+<span (click)="deleteSelectedTodos(i)"><button>Delete Selected</button></span>
+
+      </div>
