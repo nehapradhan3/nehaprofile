@@ -18,16 +18,16 @@
      <h4> <p class="text-danger"> Typing: {{ newTodo }}</p></h4>
     </div>
 
-    <ul>
+    <ol>
         <li *ngFor="let todo of todos; let i=index">
 
         <input name="packersOff" type="checkbox" class="strikethrough" value="1" type="checkbox" [(ngModel)]="todo.completed" />
         <span class="strikeThis" [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
         <p class="text-warning">  {{todo.text}}
-        <span (click)="deleteTodo(i)" class="delete-icon"><button type="button" class="btn btn-success">x</button></span>
+        <span (click)="deleteTodo(i)" class="delete-icon"></span>
         </p>
         </li>
-    </ul>
+    </ol>
 
 <span (click)="deleteSelectedTodos(i)"><button>Delete Selected</button></span>
 

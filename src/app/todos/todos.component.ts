@@ -33,7 +33,7 @@ addTodo(event) {
   this.todos.push(this.todoObj);
   this.newTodo = '';
   event.preventDefault();
-});
+};
 
 deleteTodo(index) {
   this.todos.splice(index,1);
@@ -47,11 +47,5 @@ deleteSelectedTodos() {
        }
      }
    }
-// deleteTodo(todoText) {
-// for(var i=0; i<this.todos.length;i++){
-// if(this.todos[i].text == todoText){
-// this.todos.splice(i,1);
-//    }
-//   }
-// }
+
 }
