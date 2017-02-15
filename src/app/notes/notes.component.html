@@ -3,8 +3,8 @@
 <div class="todos">
 
   <div>
-     <form (submit)="addTodo($event)"role="form">
-         <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="form-control" placeholder="Your message"name="newTodo">
+     <form (submit)="addTodo($event)"role="form" style="padding-bottom:20px; padding-left:10px;">
+      <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="form-control" placeholder="Your message"name="newTodo">
          <button  type="submit" class="btn btn-danger btn-block"[disabled]="newTodo===''"><i class="fa fa-file-text-o"></i> Write your message</button>
     </form>
   </div>
@@ -16,7 +16,7 @@
           	<ul class="notes">
                   <li>
                       <div class="rotate-2 red-bg">
-                          <small>12:03:28 12-04-2014</small>
+
                           <h4>Messages</h4>
                             <ol>
                                 <li *ngFor="let todo of todos; let i=index">

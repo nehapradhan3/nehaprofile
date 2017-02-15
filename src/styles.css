@@ -584,9 +584,9 @@ div.rotate-1 {
 }
 
 div.rotate-2 {
-  -o-transform: rotate(4deg);
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
   position: relative;
   top: 5px;
 }
