@@ -626,6 +626,11 @@ ul.notes li div {
   -webkit-transition: -webkit-transform 0.15s linear;
 }
 
-
+.btn span.glyphicon {
+	opacity: 0;
+}
+.btn.active span.glyphicon {
+	opacity: 1;
+}
 
 /**** resume ****/
