@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { NotesComponent } from './notes/notes.component';
 import { TodosComponent } from './todos/todos.component';
 import { FlipComponent } from './flip/flip.component';
+import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
+import { LeadComponent } from './lead/lead.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotesComponent,
     TodosComponent,
-    FlipComponent
+    FlipComponent,
+    ViewdetailsComponent,
+    LeadComponent
   ],
   imports: [
     BrowserModule,
