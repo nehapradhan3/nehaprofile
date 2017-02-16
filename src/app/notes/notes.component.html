@@ -23,7 +23,7 @@
 
                                 <input name="packersOff" type="checkbox" class="strikethrough" value="1" type="checkbox" [(ngModel)]="todo.completed" />
                                 <span class="strikeThis" [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
-                                <p class="text-muted">  {{todo.text}}
+                                <p class="text-muted">  <strong><font color="black">{{todo.text}}</font> </strong>
                                 <span (click)="deleteTodo(i)" class="delete-icon"></span>
                                 </p>
                                 </li>
