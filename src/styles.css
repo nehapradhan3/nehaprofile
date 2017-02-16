@@ -615,7 +615,7 @@ ul.notes li div {
   text-decoration: none;
   color: #000;
   display: block;
-  height: 280px;
+  height: auto;
   width: 210px;
   padding: 1em;
   -moz-box-shadow: 5px 5px 7px #212121;
