@@ -561,9 +561,11 @@ opacity:0.9;
 
 body{margin-top:20px;}
 
+
 ul.notes li {
   margin: 10px 40px 50px -30px;
   float: left;
+  padding:1em;
 }
 
 ul.notes li, ul.tag-list li {
@@ -625,6 +627,7 @@ ul.notes li div {
   -o-transition: -o-transform 0.15s linear;
   -webkit-transition: -webkit-transform 0.15s linear;
 }
+
 
 .btn span.glyphicon {
 	opacity: 0;
