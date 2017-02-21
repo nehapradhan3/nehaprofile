@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
+import {ViewdetailsComponent} from './viewdetails/viewdetails.component';
+import {NotesComponent} from './notes/notes.component';
+const routes: Routes = [
+  {path:'leads', component:ViewdetailsComponent},
+  {path:'notes', component:NotesComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -9,3 +13,4 @@ const routes: Routes = [];
   providers: []
 })
 export class AppRoutingModule { }
+export const routingComponents=[ViewdetailsComponent, NotesComponent] 

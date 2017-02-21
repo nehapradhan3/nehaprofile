@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NotesComponent } from './notes/notes.component';
@@ -14,6 +15,7 @@ import { LeadComponent } from './lead/lead.component';
 import{EmployeeService} from './employee.service';
 import { ImagesComponent } from './images/images.component';
 import { SpecificLeadsComponent } from './specific-leads/specific-leads.component';
+import {routingComponents} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,16 +27,15 @@ import { SpecificLeadsComponent } from './specific-leads/specific-leads.componen
     LeadComponent,
     ImagesComponent,
     SpecificLeadsComponent,
+    routingComponents,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      {path:'leads' ,component:ViewdetailsComponent},
-      {path:'notes', component:NotesComponent}
-    ])
+    AppRoutingModule
+
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
