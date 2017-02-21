@@ -4,12 +4,18 @@
 <div id="demo" class="collapse">
   <div class="col-xs-12 col-md-8">
 
-      <ul class="list-group" style="padding-top:20px; padding-left:30%;">
-          <li class="list-group-item">Neha Pradhan</li>
-          <li class="list-group-item">Software Engineer(Trainee)</li>
-          <li class="list-group-item">Fusemachines.Nepal</li>
-          <li class="list-group-item"><i class="fa fa-phone"></i> 908397384732</li>
-          <li class="list-group-item"><i class="fa fa-envelope"></i> neha.pradhan@fusemachines.com</li>
+      <ul *ngFor="let employee of employees"class="list-group" style="padding-top:20px; padding-left:30%;">
+        <div class="avatar">
+  <img src="{{ employee.imgUrl }}" alt="">
+</div>
+          <li class="list-group-item">Name: {{employee.name}}</li>
+          <li class="list-group-item">Status: {{employee.status}}</li>
+
+          <!-- <li class="list-group-item">ImageUrl: {{employee.imgUrl}}</li>
+          <li class="list-group-item"><i class="fa fa-phone"></i> Website: {{employee.website.url}}</li>
+          <li class="list-group-item"><i class="fa fa-envelope"></i> neha.pradhan@fusemachines.com</li> -->
+          <!-- <span *ngIf="employee.twitter"><i class="fa fa-twitter"></i><a href="{{ employee.twitter.url}}">{{employee.twitter.name}}</a></span>
+              <span *ngIf="employee.website"><i class="fa fa-chrome"></i><a href="{{ employee.website.url }}">{{employee.website.name}}</a></span -->
           </ul>
         </div>
       </div>

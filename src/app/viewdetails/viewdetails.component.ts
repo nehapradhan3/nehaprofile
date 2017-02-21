@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import {EmployeeService} from '../employee.service';
 @Component({
   selector: 'viewdetails',
-  template: `<h2>Lead List</h2>
-  <ul *ngFor="let employee of employees">
-  <li>name : {{employee.name}}<br>
-  status: {{employee.status}}</li>
-  </ul>`
+  templateUrl:'viewdetails.component.html',
+  styleUrls:['viewdetails.component.css'],
+  // template: `<h2>Lead List</h2>
+  // <ul *ngFor="let employee of employees">
+  // <li>name : {{employee.name}}<br>
+  // status: {{employee.status}}</li>
+  // </ul>`
 
 })
 export class ViewdetailsComponent implements OnInit {
