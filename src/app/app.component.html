@@ -5,11 +5,15 @@ rel="stylesheet" />
   <div class="row">
       <!--navbar-->
   <ul class="nav nav-pills"style="padding-top:10px; padding-left:30%; padding-bottom:30px;" >
-
-     <li><a href="#">Home</a></li>
+<nav>
+  <a routerLink="/leads" routerLinkActive="active"><button class="btn btn primary">leads</button></a>
+  <a routerLink="/notes" routerLinkActive="active"><button class="btn btn primary">notes</button></a>
+</nav>
+<router-outlet></router-outlet>
+     <!-- <li><a href="#">lead</a></li>
      <li><a href="#">Add Notes</a></li>
      <li><a href="#">Send Email</a></li>
-     <li><a href="#">Send Message</a></li>
+     <li><a href="#">Send Message</a></li> -->
   </ul>
   <!--navbar ends-->
 
@@ -35,8 +39,9 @@ rel="stylesheet" />
                             <div class="col-xs-8 col-md-4">
                                 <figure>
                                   <p style="padding-left:30%;">
-                                    <img class="rounded-circle img-fluid" alt="" src="http://placehold.it/300x300"
-                                    />
+                                    <images></images>
+                                    <!-- <img class="rounded-circle img-fluid" alt="" src="http://placehold.it/300x300" -->
+
                                   </p>
                                 </figure>
 
@@ -64,7 +69,7 @@ rel="stylesheet" />
     </div>
 
 
-<viewdetails>Hello i am here</viewdetails> 
+<!-- <viewdetails>Hello i am here</viewdetails> -->
 
 <!--end-->
 
@@ -74,7 +79,7 @@ rel="stylesheet" />
 </div>
 
 <p style="padding-top:10px;"></p>
-<!-- <viewdetails>Hello i am here</viewdetails> -->
+
                 <div class="bs-callout bs-callout-danger col-xs-12">
                      <h4>Lead Personal information</h4>
                     <p>Test Profile.</p>

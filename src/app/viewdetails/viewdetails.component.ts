@@ -4,11 +4,7 @@ import {EmployeeService} from '../employee.service';
   selector: 'viewdetails',
   templateUrl:'viewdetails.component.html',
   styleUrls:['viewdetails.component.css'],
-  // template: `<h2>Lead List</h2>
-  // <ul *ngFor="let employee of employees">
-  // <li>name : {{employee.name}}<br>
-  // status: {{employee.status}}</li>
-  // </ul>`
+
 
 })
 export class ViewdetailsComponent implements OnInit {
