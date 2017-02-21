@@ -3,7 +3,7 @@
   <div>
      <form (submit)="addTodo($event)"role="form">
          <input [(ngModel)]="newTodo" (keyup.enter)="newTodo=''" class="form-control" placeholder="Your Task"name="newTodo">
-         <button  type="submit" class="btn btn btn-primary"[disabled]="newTodo===''">Add Todo</button>
+         <button   style="margin-top:10px;" postion="center" type="submit" class="btn btn btn-primary"[disabled]="newTodo===''">Add Todo</button>
     </form>
   </div>
 
@@ -29,6 +29,6 @@
         </li>
     </ol>
 
-<span (click)="deleteSelectedTodos(i)"><button><i class="fa fa-trash-o "></i> Delete Selected</button></span>
+<span (click)="deleteSelectedTodos(i)"><button class="btn btn primary" position="justified"><i class="fa fa-trash-o "></i> Delete Selected</button></span>
 
       </div>

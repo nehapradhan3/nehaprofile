@@ -21,13 +21,10 @@
                             <ol>
                                 <li style="margin-bottom:-20px; margin-top:-20px;" *ngFor="let todo of todos; let i=index">
 
-
-
-
                                   <!-- <div style=""> -->
                                 <input name="packersOff" type="checkbox" style="float: left; margin-top: 5px; margin-left: -18px;"class="btn btn-primary" value="1" type="checkbox" [(ngModel)]="todo.completed" />
                                 <span class="strikeThis" [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
-                                <p class="text-muted">  <strong><font color="black">{{todo.text}}</font> </strong>
+                                <p class="text-muted"> <font color="black">{{todo.text}}</font>
                                 <span (click)="deleteTodo(i)" class="delete-icon"></span>
                                 </p>
                                 </li>

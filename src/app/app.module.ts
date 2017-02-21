@@ -10,6 +10,8 @@ import { FlipComponent } from './flip/flip.component';
 import { ViewdetailsComponent } from './viewdetails/viewdetails.component';
 import { LeadComponent } from './lead/lead.component';
 
+import{EmployeeService} from './employee.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +19,16 @@ import { LeadComponent } from './lead/lead.component';
     TodosComponent,
     FlipComponent,
     ViewdetailsComponent,
-    LeadComponent
+    LeadComponent,
+
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

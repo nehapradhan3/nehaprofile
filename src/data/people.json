@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Neha Pradhan",
+    "status": "Currently coding on a Angular2",
+    "imgUrl": "https://cid-bafff31763f69b01.users.storage.live.com/users/0xbafff31763f69b01/myprofile/expressionprofile/profilephoto:UserTileMedium,UserTileStatic,UserTileSmall/MeControlMediumUserTile?ck=1&ex=24&fofoff=1",
+    "website": {
+      "url": "https://nehapradhan3.wixsite.com/website",
+      "name": "nehapradhan3.wixsite.com/website"
+    },
+    "twitter": {
+      "url": "https://twitter.com/nehapradhan3",
+      "name": "@aceit_3"
+    }
+  },
+  {
+    "name": "Nita Pradhan",
+    "status": "teacher..teaching biology",
+    "imgUrl": "https://yt3.ggpht.com/-83Hsz0DF18k/AAAAAAAAAAI/AAAAAAAAAAA/ViE0Dde1Ghs/s100-c-k-no-mo-rj-c0xffffff/photo.jpg",
+    "twitter": {
+      "url": "https://twitter.com/nitapradhan",
+      "name": "@nitapradhan"
+    }
+  }
+]
